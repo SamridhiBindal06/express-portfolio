@@ -1,0 +1,65 @@
+<!-- Main Navigation section -->
+<!--Navbar -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand " href="/">
+      <img src="/Assets/Images/Sammy_logo.png" width="" height="50" alt="">
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+  data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+ 
+
+      <% if (title == "About") { %>
+      <li class="nav-item active">
+      <% } else  { %>
+      <li class="nav-item">
+      <% } %>
+        <a class="nav-link" href="/about"><i class="fas fa-lg fa-user"></i>  About </a>
+      </li>
+
+      <% if (title == "Projects") { %>
+      <li class="nav-item active">
+      <% } else  { %>
+      <li class="nav-item">
+      <% } %>
+        <a class="nav-link" href="/projects"><i class="fas fa-lg fa-tasks"></i>  Projects </a>
+      </li>
+
+      <% if (title == "Services") { %>
+      <li class="nav-item active">
+      <% } else  { %>
+      <li class="nav-item">
+      <% } %>
+        <a class="nav-link" href="/services"><i class="fa fa-lg fa-thumbs-up"></i>  Services </a>
+      </li>
+
+      <% if (title == "Contact") { %>
+      <li class="nav-item active">
+      <% } else  { %>
+      <li class="nav-item">
+      <% } %>
+        <a class="nav-link" href="/contact"><i class="fas fa-lg fa-phone-square-alt"></i>  Contact </a>
+      </li>
+
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        
+          
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-heart"></i> Follow 
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://m.facebook.com/samridhibindal97"><i class="fab fa-facebook-square"></i> Facebook </a></li>
+              <li><a class="dropdown-item" href="https://instagram.com/i.m_sami?igshid=20pqr6ctexvo"><i class="fab fa-instagram"></i> Instagram </a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/samridhi-bindal-44b534159"><i class="fab fa-linkedin"></i> LinkedIn </a></li>
+              <li><a class="dropdown-item" href="https://github.com/SamridhiBindal06"><i class="fab fa-github"></i> Github </a></li>
+            </ul>
+      </div>
+    </ul>
+  </div>
+</nav>
