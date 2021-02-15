@@ -1,5 +1,4 @@
 <!-- Main Navigation section -->
-<!--Navbar -->
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -13,7 +12,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
 
- 
+       <% if (title == "Home") { %>
+          <li class="nav-item active">
+          <% } else  { %>
+          <li class="nav-item">
+          <% } %>
+            <a class="nav-link" href="/"><i class="fas fa-lg fa-home"></i>  Home </a>
+          </li>
 
       <% if (title == "About") { %>
       <li class="nav-item active">
