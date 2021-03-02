@@ -1,3 +1,13 @@
+/*
+
+    File name: user.js
+    Created By: Samridhi Bindal
+    Student ID: 301172178
+    Created on: 02 March, 2021
+
+*/
+
+
 // require modules for the User Model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
