@@ -30,7 +30,7 @@ module.exports.displayAboutPage = (req, res, next) => {
     res.render('index', { title: 'About', displayName: req.user ? req.user.displayName : ''});
 }
 
-module.exports.displayProductsPage = (req, res, next) => {
+module.exports.displayProjectsPage = (req, res, next) => {
     res.render('index', { title: 'Projects', displayName: req.user ? req.user.displayName : ''});
 }
 
