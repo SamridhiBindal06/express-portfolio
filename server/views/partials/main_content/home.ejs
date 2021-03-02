@@ -17,6 +17,19 @@
 	background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
 	background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
 	margin-bottom: 200px;">
+  <h4>
+    <% if (contact.firstName !=null && contact.firstName !='' ){ %>
+      <p>
+              <div class="alert alert-dismissible alert-success">
+                  <button type="button" class="close"
+                      data-dismiss="alert">&times;</button>
+                  <strong>Thanks! <%= contact.firstName %> <%= contact.lastName %> for connecting</strong>
+                  <p> </p>
+                  Message: "<%= contact.message %>" is sent as Feedback with Email ID: "<%=contact.email %>" and Contact Number: <%= contact.number %> .
+              </div>
+      </p>
+      <% } %>
+  </h4>
         <div class="container box_1620" style="min-height: 700px;
 		border-radius: 12px;
 		position: relative;
@@ -24,6 +37,7 @@
 		background: #fff;
 		padding: 30px;
 		box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3); box-sizing: border-box;" >
+    
            
                <div class="p-3 border bg-light">
                 <div class="container-md text-center" >
